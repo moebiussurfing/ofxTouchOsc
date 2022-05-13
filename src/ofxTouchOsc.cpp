@@ -156,11 +156,14 @@ void ofxTouchOsc::save(string name) {
     file << getXml();
     file.close();
     string cmd;
+
+#ifdef TARGET_OSX
     cmd += "cd "+ofToString(ofToDataPath("")) + "; ";
     cmd += "zip -r "+name+".touchosc index.xml; ";
     cmd += "rm index.xml; ";
     cmd += "open "+name+".touchosc; ";
     ofSystem(cmd);
+#endif
 }
 
 //---------

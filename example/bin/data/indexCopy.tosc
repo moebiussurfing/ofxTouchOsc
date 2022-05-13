@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="13" mode="3" w="320" h="480" orientation="horizontal"><tabpage name="bXlQYWdl" scalef="0.0" scalet="1.0" >
+<control name="bXlGYWRlcg==" type="faderh" x="3" y="24" w="288" h="48" color="yellow" scalef="0" scalet="1" response="absolute" inverted="false" centered="false"  >
+</control>
+<control name="bXlSb3Rhcnk=" type="rotaryh" x="3" y="86" w="48" h="48" color="blue" scalef="0" scalet="1" osc_cs="L215U3BlY2lhbE9zY0FkZHJlc3Mv" response="absolute" inverted="false" centered="false" norollover="false"  >
+</control>
+<control name="bXlMZWQ=" type="led" x="64" y="86" w="48" h="48" color="blue" scalef="0" scalet="1"  >
+</control>
+<control name="bXlCdXR0b24=" type="push" x="128" y="86" w="48" h="48" color="blue" scalef="0" scalet="1" local_off="false" velocity="0"  >
+</control>
+<control name="bXlUb2dnbGU=" type="toggle" x="192" y="86" w="48" h="48" color="blue" scalef="0" scalet="1" local_off="false"  >
+</control>
+<control name="bXlFbmNvZGVy" type="encoder" x="256" y="86" w="48" h="48" color="blue" scalef="0" scalet="1"  >
+</control>
+<control name="bXlNdWx0aUZhZGVy" type="multifaderh" x="3" y="144" w="96" h="96" color="blue" scalef="0" scalet="1" number="5" inverted="false" centered="false"  >
+</control>
+<control name="bXlYeQ==" type="xy" x="112" y="144" w="96" h="96" color="blue" scalef="0" scalet="1" inverted_x="false" inverted_y="false"  >
+</control>
+<control name="bXlNdWx0aVh5" type="multixy" x="214" y="144" w="96" h="96" color="blue" scalef="0" scalet="1" inverted_x="false" inverted_y="false"  >
+</control>
+<control name="bXlNdWx0aVB1c2g=" type="multipush" x="3" y="302" w="96" h="96" color="blue" scalef="0" scalet="1" number_x="5" number_y="4" local_off="false"  >
+</control>
+<control name="bXlNdWx0aVRvZ2dsZQ==" type="multitoggle" x="112" y="302" w="96" h="96" color="blue" scalef="0" scalet="1" number_x="5" number_y="4" local_off="false" ex_mode="false"  >
+</control>
+<control name="bXlMYWJlbA==" type="labelh" x="217" y="264" w="80" h="48" color="blue" size="16" background="false" outline="true" text="aGVsbG8="  >
+</control>
+<control name="bXlMYWJlbA==" type="timeh" x="217" y="312" w="64" h="48" color="blue" size="16" background="false" outline="false" seconds="true"  >
+</control>
+<control name="bXlMYWJlbA==" type="batteryh" x="217" y="369" w="64" h="48" color="blue" size="16" background="true" outline="true"  >
+</control>
+</tabpage>
+<tabpage name="YW5vdGhlclBhZ2U=" scalef="0.0" scalet="1.0" >
+<control name="YW5vdGhlckJ1dHRvbg==" type="push" x="32" y="96" w="160" h="240" color="green" scalef="0" scalet="1" local_off="false" velocity="0"  >
+</control>
+<control name="YW5vdGhlckxhYmVs" type="labelh" x="48" y="384" w="64" h="48" color="green" size="14" background="false" outline="false" text="YW5vdGhlckxhYmVs"  >
+</control>
+</tabpage>
+</layout>
