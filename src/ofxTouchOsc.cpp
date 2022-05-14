@@ -164,6 +164,31 @@ void ofxTouchOsc::save(string name) {
     cmd += "open "+name+".touchosc; ";
     ofSystem(cmd);
 #endif
+
+#ifdef TARGET_WIN32
+	//https://superuser.com/questions/201371/create-zip-folder-from-the-command-line-windows
+	//https://stackoverflow.com/questions/18180060/how-to-zip-a-file-using-cmd-line
+	//https://www.computerhope.com/issues/ch000549.htm#1
+	// tar.exe -a -c -f out.zip in.txt
+	// 7z a -tzip {yourfile.zip} {yourfolder}
+	//cmd += getAbsolutePath("", false);
+	cmd += "cd " + ofToString(ofToDataPath("", true));
+	cout << endl << cmd << endl<< endl;
+    ofSystem(cmd);
+	
+	cmd = "tar.exe -cvzf index.zip index.xml";
+	//tar - cvzf archive.tar "C:\Users\fatiw\Desktop\My Account Info"
+	cout << endl << cmd << endl<< endl;
+    ofSystem(cmd);
+
+	if (std::rename("index.zip", "index.touchosc")) {
+		std::perror("Error renaming");
+	}
+
+	cout << endl << endl<< endl;
+	//cmd += "powershell Compress-Archive .\index.xml : .\index.zip";
+#endif
+
 }
 
 //---------
